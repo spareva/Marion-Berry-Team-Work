@@ -7,19 +7,20 @@
     </head>
     <body>
     <header>
-        <nav>
-            <div>
-             <select>
-             <option>За нас</option>
-             <option onclick="window.open('declaration.html')">Декларация</option>
-             <option onclick="window.open('statute.html')">Устав</option>
-             <option onclick="window.open('chairman.html')">Председател</option>
-             </select> 
-             <button onclick="window.open('index.html')">Новини</button>
-             <button onclick="window.open('membership.html')">Членство</button>
-             <button onclick="window.open('donations.html')">Дарения</button>
-             <button onclick="window.open('contacts.html')">Контакти</button>
-            </div>
+        <nav class="mainnav">
+            <ul class="horizontal">
+                <li><a href="">За нас</a>
+                    <ul>
+                        <li><a href="declaration.html">Декларация</a></li>
+                        <li><a href="statute.html">Устав</a></li>
+                        <li><a href="chairman.html">Председател</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="active">Новини</a></li>
+                <li><a href="membership.html">Членство</a></li>
+                <li><a href="donations.html">Дарения</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -90,8 +91,8 @@
                 </div>
                 <hr>
                 <div class="body">
-                    <div class="../img">
-                        <img src="../img/softuniconf1.png" alt="">
+                    <div class="picture">
+                        <img src="../img/softuniconf1.png" alt="" />
                     </div>
                     <p>Kачественото образование, което дава не само знания, но и умения
                     на младите хора, е в основата на решаването на проблемите с високата безработица,
