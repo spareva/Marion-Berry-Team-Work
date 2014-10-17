@@ -1,0 +1,5 @@
+c:\users\spareva\documents\visual studio 2012\Projects\SoftUnion\SoftUnionApp\bin\SoftUnionApp.dll
+c:\users\spareva\documents\visual studio 2012\Projects\SoftUnion\SoftUnionApp\bin\SoftUnionApp.pdb
+c:\users\spareva\documents\visual studio 2012\Projects\SoftUnion\SoftUnionApp\obj\Debug\SoftUnionApp.csprojResolveAssemblyReference.cache
+c:\users\spareva\documents\visual studio 2012\Projects\SoftUnion\SoftUnionApp\obj\Debug\SoftUnionApp.dll
+c:\users\spareva\documents\visual studio 2012\Projects\SoftUnion\SoftUnionApp\obj\Debug\SoftUnionApp.pdb
