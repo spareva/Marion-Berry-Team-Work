@@ -3,27 +3,59 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Контакти</title>
-<link rel="stylesheet" href="/css/SoftwareUnion.css"/>
+    <link rel="stylesheet" href="/css/SoftwareUnion.css"/>
 </head>
-<body>
-<header>
-<nav>
-<div>
- <select>
- <option>За нас</option>
- <option onclick="window.open('declaration.html')">Декларация</option>
- <option onclick="window.open('statute.html')">Устав</option>
- <option onclick="window.open('chairman.html')">Председател</option>
- </select> 
- <button onclick="window.open('index.html')">Новини</button>
- <button onclick="window.open('membership.html')">Членство</button>
- <button onclick="window.open('donations.html')">Дарения</button>
- <button onclick="window.open('contacts.html')">Контакти</button>
-</div>
-</nav>
-</header>
-<div class="donation">
-<h1>Контакти</h1>
-<p></p>
-</body>
+    <body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <div>
+                    <select>
+                        <option>За нас</option>
+                        <option onclick="window.open('declaration.html')">Декларация</option>
+                        <option onclick="window.open('statute.html')">Устав</option>
+                        <option onclick="window.open('chairman.html')">Председател</option>
+                    </select> 
+                    <button onclick="window.open('index.html')">Новини</button>
+                    <button onclick="window.open('membership.html')">Членство</button>
+                    <button onclick="window.open('donations.html')">Дарения</button>
+                    <button onclick="window.open('contacts.html')">Контакти</button>
+                </div>
+            </nav>
+        </header>
+        <section class="content">
+            <article class="conf">
+                <h1>Контакти</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam dui eu magna fringilla ultrices. Duis suscipit, tortor quis varius sodales, dolor lectus tempor lectus, vitae semper risus metus in nunc. In at nisi lacinia elit rutrum iaculis. Nullam aliquet ultrices lectus, eu accumsan urna molestie ut. Morbi id magna velit. Integer venenatis, dolor in lacinia ullamcorper, est purus faucibus metus, et volutpat diam justo eu risus. Etiam quis leo enim. In condimentum, massa eget tempus imperdiet, mi mauris vehicula tortor, vitae ullamcorper nibh felis sit amet leo. </p>
+                <form enctype="text/plain" action="mailto:support@softunion.bg" method="post">
+                    <fieldset>
+                        <legend>Форма за обратна връзка</legend>
+                        <div class="formLabels">
+                            <label for="name">Име:</label>
+                            <br>
+                            <label for="email">Email:</label>
+                            <br>
+                            <label for="phone">Телефон:</label>
+                            <br>
+                            <label for="text">Коментар:</label>
+                            <br>
+                        </div>
+                        <div class="formFill">
+                            <input id="name" type="text" required="required" name="user_name">
+                            <br>
+                            <input id="email" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" title="Email" required="required">
+                            <br>
+                            <input id="phone" type="text" pattern="[0-9]{10}" title="Phone number">
+                            <br>
+                            <textarea id="text" required="required" name="Comments"></textarea>
+                            <br>
+                            <input id="reset" type="reset" value="Изчисти">
+                            <input id="submit" type="submit" value="Изпрати">
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </div>
+    </body>
 </html>
