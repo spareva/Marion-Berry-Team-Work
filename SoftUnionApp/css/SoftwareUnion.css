@@ -8,7 +8,7 @@ body{
      width: 75%;
     margin: 0 auto;
 }
-header{
+/*header{
     background-image: url('../img/logo1.png');
     background-repeat: no-repeat;
     background-position: center; 
@@ -20,7 +20,7 @@ nav{
     right: 0;
     bottom: 20px;
     right: 12%;
-}
+}*/
 button {
 padding: 2px 10px;
 margin-left: 6px;
@@ -76,7 +76,19 @@ p{
 
 .content {
     width: 68%;
-    
+    z-index: 2;
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        width: 88%;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        width: 98%;
+    }   
 }
 
 article {
@@ -133,62 +145,10 @@ body, .mainnav, ul, li {
     width: 80px;
 }
 
-nav ul.dropdown {
-    display: none;
+nav ul li ul li:nth-child(even){
+    border-top: 2px solid #2b526a;
+    border-bottom: 2px solid #2b526a;
 }
-
-nav ul.horizontal {
-    float: right;
-    height: 100%;
-    list-style-type: none;
-    position: relative;
-}
-
-nav ul.horizontal > li {
-    float: left;
-    height: 100%;
-}
-
-nav ul.horizontal > li a {
-    display: block;
-    font-size: 1.2em;
-    padding-right: 3.3em;
-    padding-top: 0.6em;
-    position: relative;
-    text-decoration: none;
-    color:white
-}
-
-nav ul.horizontal li a:visited {
-    color:white
-}
-
-nav ul.horizontal li:hover > a, nav ul.horizontal li.active > a {
-    color: red;
-}
-
-nav ul ul {
-    display: none;
-}
-
-nav ul.horizontal li:hover ul {
-    display: block;
-    background: #1c3954;
-    list-style-type: none;
-    position: absolute;
-}
-
-nav ul li ul li {
-    float: none;
-    display: block;
-    height: 100%;
-    /*border-top: 2px solid #2b526a;*/
-}
-
-    nav ul li ul li:nth-child(even){
-        border-top: 2px solid #2b526a;
-        border-bottom: 2px solid #2b526a;
-    }
 
 nav ul.horizontal li ul li a {
     display: block;
@@ -198,4 +158,133 @@ nav ul.horizontal li ul li a {
     position: relative;
     text-decoration: none;
     color:white
+}
+
+#page-header {
+    background-color:#1C3954;
+    padding-bottom:50px;
+    padding-top:30px;
+    padding-left:50px;
+    padding-right:50px;
+}
+            /*Logo and headtext CSS*/
+#headtext {
+    display:inline-block;
+    float:right;
+    margin-right:10%;
+}
+#logo {
+    margin-left:10%;
+    display:inline-block;
+    max-width:100%;
+}
+#headtext span {
+    font-size:2em;
+    margin-right:10px;
+}
+#headtext span:nth-child(1) {
+    color:white;
+}
+#headtext span:nth-child(2) {
+    color:green;
+}
+#headtext span:nth-child(3) {
+    color:red;
+}
+#headtext span:nth-child(4) {
+    color:white;
+    display:block;
+    font-weight:bold;
+    text-align:center;
+    margin-top:5%;
+}
+@media (max-width: 960px) {
+    #headtext {
+        margin-right:5%;
+    }
+    #logo {
+        margin-left:5%;
+    }
+}
+@media (max-width: 900px) {
+    #headtext {
+        margin-right:0%;
+    }
+    #logo {
+        margin-left:0%;
+    }
+}
+@media (max-width: 800px) {
+    #logo {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #headtext {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+        float:inherit;
+    }
+    #headtext span {
+        display:block;
+        font-size:1em;
+    }
+    #page-header {
+        padding:2%;
+    }
+}
+
+#page-header nav ul {
+    list-style-type:none;
+    float:right;
+    display:block;
+    margin-top:15px;
+}
+#page-header nav ul li {
+    display:inline-block;
+    padding-left:10px;
+    font-weight:bold;
+    padding-bottom:10px;
+    font-size:1em;
+}
+.whitetext {
+    color:white;
+}
+.greentext {
+    color:green;
+}
+.redtext {
+    color:red;
+}
+#page-header nav ul li a:hover {
+    font-size: 2em;
+    text-decoration: none;
+}
+
+@media (max-width:900px) {
+    #page-header nav ul li {
+        font-size:0.8em;
+    }
+    #page-header nav ul {
+        display:block;
+        float:none;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+@media (max-width:700px) {
+    #page-header nav ul li {
+        display:block;
+        margin-left:0px;
+        width:100%;
+        text-align:center;
+    }
+    #page-header nav ul {
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:10px;
+        padding-left:0px;
+    }
 }
